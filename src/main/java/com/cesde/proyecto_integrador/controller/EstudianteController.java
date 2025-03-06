@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/estudiantes")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://b2pi2-876585927226.us-central1.run.app/swagger-ui/index.html")
 public class EstudianteController {
 
     @Autowired

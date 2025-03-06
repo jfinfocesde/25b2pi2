@@ -1,0 +1,370 @@
+{
+  "info": {
+    "_postman_id": "e5f3f8d7-1234-5678-9abc-def012345678",
+    "name": "Proyecto Integrador",
+    "description": "Colección de endpoints para el Proyecto Integrador",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Asistencia",
+      "item": [
+        {
+          "name": "Crear Asistencia",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/asistencias",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "asistencias"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fecha\": \"2024-03-20\",\n  \"presente\": true,\n  \"estudianteId\": 1,\n  \"grupoId\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Obtener todas las Asistencias",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/asistencias",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "asistencias"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Asistencia por ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/asistencias/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "asistencias", "1"]
+            }
+          }
+        },
+        {
+          "name": "Actualizar Asistencia",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/asistencias/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "asistencias", "1"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fecha\": \"2024-03-20\",\n  \"presente\": false,\n  \"estudianteId\": 1,\n  \"grupoId\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar Asistencia",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8080/api/asistencias/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "asistencias", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Grupo",
+      "item": [
+        {
+          "name": "Crear Grupo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/grupos",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "grupos"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Grupo A\",\n  \"profesorId\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Obtener todos los Grupos",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/grupos",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "grupos"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Grupo por ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/grupos/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "grupos", "1"]
+            }
+          }
+        },
+        {
+          "name": "Actualizar Grupo",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/grupos/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "grupos", "1"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Grupo B\",\n  \"profesorId\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar Grupo",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8080/api/grupos/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "grupos", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Profesor",
+      "item": [
+        {
+          "name": "Crear Profesor",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/profesores",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "profesores"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Juan\",\n  \"apellido\": \"Pérez\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Obtener todos los Profesores",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/profesores",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "profesores"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Profesor por ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/profesores/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "profesores", "1"]
+            }
+          }
+        },
+        {
+          "name": "Actualizar Profesor",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/profesores/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "profesores", "1"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Juan\",\n  \"apellido\": \"González\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar Profesor",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8080/api/profesores/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "profesores", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Estudiante",
+      "item": [
+        {
+          "name": "Crear Estudiante",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/estudiantes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "estudiantes"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"María\",\n  \"apellido\": \"López\",\n  \"grupoId\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Obtener todos los Estudiantes",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/estudiantes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "estudiantes"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Estudiante por ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/estudiantes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "estudiantes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Actualizar Estudiante",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/estudiantes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "estudiantes", "1"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"María\",\n  \"apellido\": \"García\",\n  \"grupoId\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Eliminar Estudiante",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8080/api/estudiantes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "estudiantes", "1"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

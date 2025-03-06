@@ -1,0 +1,249 @@
+{
+  "info": {
+    "_postman_id": "random-uuid",
+    "name": "Proyecto Integrador API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Asistencias",
+      "item": [
+        {
+          "name": "Get All Asistencias",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/asistencias"
+          }
+        },
+        {
+          "name": "Get Asistencia by ID",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/asistencias/1"
+          }
+        },
+        {
+          "name": "Create Asistencia",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:8080/api/asistencias",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fecha\": \"2024-02-20\",\n  \"estado\": \"PRESENTE\",\n  \"estudiante\": {\n    \"id\": 1\n  }\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Asistencia",
+          "request": {
+            "method": "PUT",
+            "url": "http://localhost:8080/api/asistencias/1",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fecha\": \"2024-02-20\",\n  \"estado\": \"TARDE\",\n  \"estudiante\": {\n    \"id\": 1\n  }\n}"
+            }
+          }
+        },
+        {
+          "name": "Delete Asistencia",
+          "request": {
+            "method": "DELETE",
+            "url": "http://localhost:8080/api/asistencias/1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Estudiantes",
+      "item": [
+        {
+          "name": "Get All Estudiantes",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/estudiantes"
+          }
+        },
+        {
+          "name": "Get Estudiante by ID",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/estudiantes/1"
+          }
+        },
+        {
+          "name": "Create Estudiante",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:8080/api/estudiantes",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Juan\",\n  \"apellido\": \"Pérez\",\n  \"email\": \"juan.perez@example.com\",\n  \"grupo\": {\n    \"id\": 1\n  }\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Estudiante",
+          "request": {
+            "method": "PUT",
+            "url": "http://localhost:8080/api/estudiantes/1",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Juan\",\n  \"apellido\": \"Pérez\",\n  \"email\": \"juan.perez@example.com\",\n  \"grupo\": {\n    \"id\": 1\n  }\n}"
+            }
+          }
+        },
+        {
+          "name": "Delete Estudiante",
+          "request": {
+            "method": "DELETE",
+            "url": "http://localhost:8080/api/estudiantes/1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Profesores",
+      "item": [
+        {
+          "name": "Get All Profesores",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/profesores"
+          }
+        },
+        {
+          "name": "Get Profesor by ID",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/profesores/1"
+          }
+        },
+        {
+          "name": "Create Profesor",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:8080/api/profesores",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"María\",\n  \"apellido\": \"González\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Profesor",
+          "request": {
+            "method": "PUT",
+            "url": "http://localhost:8080/api/profesores/1",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"María\",\n  \"apellido\": \"González\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Delete Profesor",
+          "request": {
+            "method": "DELETE",
+            "url": "http://localhost:8080/api/profesores/1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Grupos",
+      "item": [
+        {
+          "name": "Get All Grupos",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/grupos"
+          }
+        },
+        {
+          "name": "Get Grupo by ID",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/api/grupos/1"
+          }
+        },
+        {
+          "name": "Create Grupo",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:8080/api/grupos",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Grupo A\",\n  \"area\": \"Matemáticas\",\n  \"profesor\": {\n    \"id\": 1\n  }\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Grupo",
+          "request": {
+            "method": "PUT",
+            "url": "http://localhost:8080/api/grupos/1",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Grupo A\",\n  \"area\": \"Matemáticas\",\n  \"profesor\": {\n    \"id\": 1\n  }\n}"
+            }
+          }
+        },
+        {
+          "name": "Delete Grupo",
+          "request": {
+            "method": "DELETE",
+            "url": "http://localhost:8080/api/grupos/1"
+          }
+        }
+      ]
+    }
+  ]
+}

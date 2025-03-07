@@ -16,7 +16,7 @@ public class Nota {
 
     @Column(nullable = false)
     @Min(1)
-    @Max(5)
+    @Max(3)
     private Integer numeroSemestre;
 
     @Column(nullable = false)
